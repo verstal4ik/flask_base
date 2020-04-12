@@ -9,10 +9,10 @@
 
   	{% raw %}
   	<div id="app">
-      <input type="text" v-on:input="increment ($event.target.value)">
-      <p>{{ value }}</p>
-      <p>{{ doubleValue }} </p>
-
+  		<span @mouseover="changeText">Text жми сюда низ меняем на "Текст0"</span>
+  		<p>{{ title }}</p>
+  		<p :class="styleCSS">Цвет: {{ styleCSS }}</p>
+  		<input type="text" v-on:input="styleCSS = $event.target.value">
   	</div>
   	{% endraw %}
 
