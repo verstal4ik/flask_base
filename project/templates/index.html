@@ -1,19 +1,125 @@
 {%extends "base.html"%}
 
 {% block content %}
- 	<h1>Flask APP</h1>
-  <p>
-  	 Дорого в 1000 лье начинается с первого шага
- </p>
   	<a href="{{url_for('index')}}">Ссыкла сюда же</a> 
 
-  	{% raw %}
-  	<div id="app">
-      <input type="text" v-on:input="increment ($event.target.value)">
-      <p>{{ value }}</p>
-      <p>{{ doubleValue }} </p>
+    <table
+    data-toggle="table"
+    data-search="true">
+      <thead>
+        <tr>
+          <th data-sortable="true" data-field="id">Item ID</th>
+          <th>Название</th>
+          <th>Участок</th>
+          <th>Зона</th>
+          <th>Дата установки</th>
+          <th>Резерв</th>
+          <th>Комментарии</th>
+          <th>Пуск<th>
+          <th>Тип пуска<th>
+          <th>Обознач. схема</th>
+          <th>Автомат</th>
+          <th>Шильда</th>
+          <th>Произовдитель</th>
+          <th>Масса</th>
+          <th>Скорость</th>
+          <th>Мощность, кВт</th>
+          <th>Подключение</th>
+          <th>Сила тока</th>
+          <th>Частота</th>
+          <th>S жил</th>
+          <th>cos.f</th>
+          <th>eff</th>
+          <th>Rating</th>
+          <th>I-Kl</th>
+          <th>Tamb</th>
+          <th>IP</th>
+          <th>IM</th>
+          <th>Обороты</th>
+          <th>Подшипник перед</th>
+          <th>Подшипник зад</th>
+          <th>Сальник перед</th>
+          <th>Сальник зад</th>
+          <th>Тормоз</th>
+          <th>Вал диаметр</th>
+          <th>Вал длина/th>
+          <th>Вал шпонка</th>
 
-  	</div>
-  	{% endraw %}
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Привод RB</td>
+          <td>Профиль</td>
+          <td>Загрузочный стол</td>
+          <td>Прямой</td>
+          <td>M12</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Привод Тр10</td>
+          <td>Сортировка</td>
+          <td>Загрузка бревен</td>
+          <td>ЧП</td>
+          <td>Delta ... </td>
+          <td>M8</td>
+          <td>Vor Tran Bag</td>
+          <td>Fu ... </td>
+          <td>1500</td>
+          <td>5.5кВт</td>          
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
 {%endblock%}
